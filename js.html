@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Tıkla" onclick="document.write('Merhaba Dünya!')" style="display:block; margin-bottom: 10px;">
+    <br>
+    <img src="sid.jpg" height="50" width="50"  onmouseover="document.write('Merhaba!')" style="display:block; margin-bottom: 10px;">
+
+   <script>
+        var firstname;
+        firstname = "Fatıma";
+        document.write(firstname);
+        document.write("<br>");
+        firstname = "Zehra";
+        document.write(firstname);
+         document.write("<br>");
+    </script>
+
+    <p>Yukarıdaki betik bir değişken tanımlar, 
+    ona bir değer atar, bu değeri görüntüler, 
+    değeri değiştirir ve değeri tekrar görüntüler.</p>
+    <script>
+    x= 5+5+"5"+5+5;
+    document.write(x);
+    </script>
+    <br>
+    <script type="text/javascript">
+        function Çarpma(a,b){
+            return a*b;
+        }
+        var sonuc=Çarpma(7,10);
+        document.write(sonuc);
+    </script>
+
+    <script type="text/javascript">
+        var x=10;
+        function Çarpma(a,b){
+            document.write("<br>"+x);
+        }
+        var sonuc=Çarpma(10,10);
+        document.write(x);
+    </script>
+
+    <script type="text/javascript">
+        for(var i=0; i<10; i++){
+            if(i==5){
+                break;
+        }
+        document.write("<br>"+"Sayı"+i)
+    }
+        for(var i=0; i<10; i++){
+            document.write("<br>"+"Sayı"+i);
+        }
+        
+        var j=0;
+        while(j<10){
+        document.write("<br>"+"Sayı"+j);
+        j++;
+    }
+    k=0;
+    do{
+        document.write("<br>"+"Sayı"+k);
+        k++;
+    }while(k<10);
+    var x;
+    var ArabaListem=["BMW","Mercedes","Volvo","hyundai","Kia"]
+    var ArabaListem2=new Array;
+    ArabaListem2[0]="Toyota";
+    ArabaListem2[1]="Honda";
+    ArabaListem2[2]="Nissan";
+
+    for(x=0; x<ArabaListem.length; x++){
+        document.write("<br>"+ArabaListem2[x]);
+    }
+
+    
+    </script>
+</body>
+</html>
